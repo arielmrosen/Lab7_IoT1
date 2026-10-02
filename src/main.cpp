@@ -175,7 +175,6 @@ void handleLedOff(){
     server.send(303);
 }
 
-
 void setup(){
   pinMode(ledPin, OUTPUT);
   Serial.begin(115200);
@@ -196,12 +195,6 @@ void setup(){
   server.on("/off", handleLedOff);
   server.begin();
   Serial.println("Web Server Started");
- 
-  // BMP280 code
-	// LED code
-	// Wi-Fi code
-	// Routes
-	// Server start
 }
 
 void loop(){
